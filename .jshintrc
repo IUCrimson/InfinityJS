@@ -1,0 +1,5 @@
+{
+  "undef": true,
+  "unused": true,
+  "predef": [ "$", "Ext", "BBUI", "container", "window", "angular", "InfinityJS", "WebSvc", "DialogSvc", "UiSvc" ]
+}
