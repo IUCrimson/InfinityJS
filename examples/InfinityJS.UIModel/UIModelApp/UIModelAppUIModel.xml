@@ -1,0 +1,10 @@
+﻿<UIModelWizardMetadata>
+  <SpecFileName>UIModelApp.Custom.xml</SpecFileName>
+  <Namespace></Namespace>
+  <ClassName>UIModelApp</ClassName>
+  <HtmlInfo GenerateHtml="true">
+    <HtmlFile>UIModelApp.html</HtmlFile>
+    <HtmlFolder>htmlforms\custom\infinityjs\uimodelapp\</HtmlFolder>
+  </HtmlInfo>
+  <GenerateFromDatabase>true</GenerateFromDatabase>
+</UIModelWizardMetadata>

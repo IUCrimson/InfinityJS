@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{167E859C-FE76-4930-932D-B076A5E801F7}"
+	ProjectSection(SolutionItems) = preProject
+		gulpfile.js = gulpfile.js
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{746F72E6-CD2F-4E99-9038-99CD18C1FA9B}"
+	ProjectSection(SolutionItems) = preProject
+		src\infinityjs-dataform.js = src\infinityjs-dataform.js
+		src\infinityjs-datalist.js = src\infinityjs-datalist.js
+		src\infinityjs-recordoperation.js = src\infinityjs-recordoperation.js
+		src\infinityjs-ui.js = src\infinityjs-ui.js
+		src\infinityjs.js = src\infinityjs.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular", "angular", "{BECB385E-ACD4-455C-B661-A224D1531438}"
+	ProjectSection(SolutionItems) = preProject
+		src\angular\infinityjs-angular-directives.js = src\angular\infinityjs-angular-directives.js
+		src\angular\infinityjs-angular-services.js = src\angular\infinityjs-angular-services.js
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InfinityJS.UIModel", "examples\InfinityJS.UIModel\InfinityJS.UIModel.vbproj", "{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InfinityJS.Catalog", "examples\InfinityJS.Catalog\InfinityJS.Catalog.vbproj", "{8A429992-E5D5-400C-B7CF-2811E586A495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A429992-E5D5-400C-B7CF-2811E586A495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A429992-E5D5-400C-B7CF-2811E586A495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A429992-E5D5-400C-B7CF-2811E586A495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A429992-E5D5-400C-B7CF-2811E586A495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{746F72E6-CD2F-4E99-9038-99CD18C1FA9B} = {167E859C-FE76-4930-932D-B076A5E801F7}
+		{BECB385E-ACD4-455C-B661-A224D1531438} = {746F72E6-CD2F-4E99-9038-99CD18C1FA9B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿<DataListSpec 
+	xmlns="bb_appfx_datalist"
+	xmlns:c="bb_appfx_commontypes" 
+	ID="60705588-4ea6-4bf0-bb69-a07940905ad0" 
+	Name="Constituent Count By County Data List"
+	Description="A data list showing constituent count by county records." 
+	Author="IUF Development"
+	c:SecurityUIFolder="InfinityJS">
+
+	<SPDataList SPName="USR_IUF_USP_DATALIST_CONSTITUENTCOUNTBYCOUNTY">
+		<c:CreateProcedureSQL>
+			<![CDATA[
+      create procedure dbo.USR_IUF_USP_DATALIST_CONSTITUENTCOUNTBYCOUNTY
+      as
+	      set nocount on;
+        
+        select 
+			    replace(lower(replace(A.COUNTYCODEID_TRANSLATION, ' ', '')), 'parish', '') as COUNTY,
+	        A.COUNTYCODEID_TRANSLATION as NAME,
+			    A.STATEID_ABBREVIATION as [STATE],
+	        count(*) as TOTAL
+        from V_QUERY_CONSTITUENTPRIMARYADDRESS A
+			    inner join V_QUERY_CONSTITUENT C on C.ID = A.CONSTITUENTID 
+        where 1=1
+			    and C.ISINACTIVE = 0 
+			    and C.ISINDIVIDUAL = 1	
+			    and A.COUNTRYID_ABBREVIATION = 'USA'	
+        group by A.STATEID_ABBREVIATION, A.COUNTYCODEID_TRANSLATION
+        order by 4 desc 
+        
+			]]>
+		</c:CreateProcedureSQL>
+	</SPDataList>
+	<Output>
+		<OutputFields>
+      <OutputField FieldID="COUNTY" Caption="County" DataType="String" IsHidden="true" />
+			<OutputField FieldID="NAME" Caption="Name" DataType="String" />
+			<OutputField FieldID="STATE" Caption="State" DataType="String" />
+			<OutputField FieldID="TOTAL" Caption="Total" DataType="Integer" />
+		</OutputFields>
+	</Output>
+</DataListSpec>

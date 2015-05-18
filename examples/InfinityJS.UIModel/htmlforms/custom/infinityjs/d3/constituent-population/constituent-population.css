@@ -1,0 +1,42 @@
+﻿.states {
+    fill: none;
+    stroke: #fff;
+    stroke-linejoin: round;
+}
+
+.counties path:hover { fill: red !important; }
+
+#tooltip {
+    background: lightsteelblue;
+    background: rgba(0, 0, 0, 0.9);
+    border: 1px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    border-radius: 5px;
+    color: white;
+    font: 12px sans-serif;
+    font-size: 12px;
+    opacity: 0;
+    padding: 20px;
+    padding: 4px;
+    pointer-events: none;
+    position: absolute;
+    text-align: center;
+    width: auto;
+}
+
+#tooltip h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+#tooltip table { table-layout: fixed; }
+
+#tooltip tr td {
+    margin: 0;
+    padding: 0;
+}
+
+#tooltip tr td:nth-child(1) { width: 50px; }
+
+#tooltip tr td:nth-child(2) { text-align: center; }

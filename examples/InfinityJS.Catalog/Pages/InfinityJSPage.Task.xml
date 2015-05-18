@@ -1,0 +1,13 @@
+﻿<TaskSpec
+	xmlns="bb_appfx_task"
+	xmlns:common="bb_appfx_commontypes" 
+	ID="61f7ff7e-6816-4bed-ac71-8a645c274cc3"
+	Name="Infinity JS Page"
+	Description="Shows the default InfinityJS demo page."
+	Author="IUF Development"
+	FunctionalAreaID="492da429-dd9b-4c78-a81c-8c71d14f08cc"
+  Sequence="0">
+
+	<common:ShowPage PageID="64c43950-0c6d-445c-acd2-0904284f4011" />
+
+</TaskSpec>

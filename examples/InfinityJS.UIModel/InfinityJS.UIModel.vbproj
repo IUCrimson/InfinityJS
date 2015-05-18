@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41F646E8-7F65-43F9-BAF1-F3D2A17837CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>InfinityJS.UIModel</RootNamespace>
+    <AssemblyName>InfinityJS.UIModel</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionInfer>On</OptionInfer>
+    <OptionStrict>On</OptionStrict>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>C:\Program Files\Blackbaud\bbappfx\vroot\bin</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>UIModel.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>C:\Program Files\Blackbaud\bbappfx\vroot\bin</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>UIModel.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Blackbaud.AppFx, Version=1.0.363.1205, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Blackbaud.AppFx.Server, Version=1.0.443.759, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Blackbaud.AppFx.UIModeling.Core, Version=1.0.363.1205, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Blackbaud.AppFx.XmlTypes, Version=1.0.443.759, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Blackbaud.AppFx.XmlTypes.XmlSerializers, Version=1.0.443.759, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Blackbaud.AppFx.UIModeling.Core" />
+    <Import Include="Blackbaud.AppFx" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="UIModelApp\UIModelAppUIModel.CodeGen.vb">
+      <DependentUpon>UIModelApp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UIModelApp\UIModelApp.vb" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="htmlforms\custom\infinityjs\d3\us-named.json" />
+    <None Include="postbuild.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="htmlforms\custom\infinityjs\angular\constituent-viewer\constituent-viewer.html" />
+    <Content Include="htmlforms\custom\infinityjs\angular\constituent-viewer\constituent-viewer.js" />
+    <Content Include="htmlforms\custom\infinityjs\angular\hello-crm\hello-crm.html" />
+    <Content Include="htmlforms\custom\infinityjs\angular\hello-crm\hello-crm.js" />
+    <Content Include="htmlforms\custom\infinityjs\d3\area-choropleth\area-choropleth.js" />
+    <Content Include="htmlforms\custom\infinityjs\d3\constituent-population\constituent-population.css" />
+    <Content Include="htmlforms\custom\infinityjs\d3\constituent-population\constituent-population.html" />
+    <Content Include="htmlforms\custom\infinityjs\d3\constituent-population\constituent-population.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs-angular-directives.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs-angular-directives.min.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs-angular-services.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs-angular-services.min.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs.js" />
+    <Content Include="htmlforms\custom\infinityjs\js\infinityjs.min.js" />
+    <Content Include="htmlforms\custom\infinityjs\uimodelapp\UIModelApp.css" />
+    <Content Include="htmlforms\custom\infinityjs\uimodelapp\UIModelApp.html" />
+    <None Include="UIModelApp\UIModelApp.Custom.xml" />
+    <Content Include="htmlforms\custom\infinityjs\uimodelapp\UIModelApp.js" />
+    <Content Include="UIModelApp\UIModelAppUIModel.xml">
+      <DependentUpon>UIModelApp.vb</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>"$(ProjectDir)postbuild.bat"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

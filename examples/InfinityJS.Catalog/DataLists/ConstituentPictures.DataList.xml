@@ -1,0 +1,37 @@
+﻿<DataListSpec 
+	xmlns="bb_appfx_datalist"
+	xmlns:common="bb_appfx_commontypes" 
+	ID="b080d40b-5ace-4f58-a45e-3d5d6a371883" 
+	Name="Constituent Pictures Data List"
+	Description="A data list showing constituent pictures records." 
+	Author="IUF Development"
+	common:SecurityUIFolder="Constituent Pictures">
+
+	<SPDataList SPName="USR_USP_DATALIST_CONSTITUENTPICTURES">
+		<common:CreateProcedureSQL>
+			<![CDATA[
+      create procedure dbo.USR_USP_DATALIST_CONSTITUENTPICTURES
+      as
+	      set nocount on;
+
+        select distinct 	
+          ID as CONSTITUENTID,
+          FORMATTEDNAME as NAME,
+	        PICTURE  
+        from V_QUERY_CONSTITUENT
+        where ISINDIVIDUAL = 1
+         and ISINACTIVE = 0
+         and PICTURE is not null
+			]]>
+		</common:CreateProcedureSQL>
+	</SPDataList>
+
+  <Output>
+		<OutputFields>
+      <OutputField FieldID="CONSTITUENTID" Caption="Constituent ID" DataType="Guid" />
+      <OutputField FieldID="NAME" Caption="Name" DataType="String" />
+			<OutputField FieldID="PICTURE" Caption="Picture" DataType="Binary" />
+		</OutputFields>
+	</Output>
+
+</DataListSpec>

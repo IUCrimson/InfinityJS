@@ -1,0 +1,34 @@
+﻿<style>
+    ul.constituents { list-style-type: none; }
+
+    ul.constituents li {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        float: left;
+        height: 170px;
+        margin: 10px;
+        min-height: 170px;
+        min-width: 200px;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+    }
+
+    ul.constituents li:hover {
+        border-color: #050;
+    }
+</style>
+<div id="constituentViewer">
+    <div ng-controller="constituentViewerController">
+        <button ng-click="refresh()">Refresh</button>
+        <hr />
+        <ul class="constituents">
+            <li ng-repeat="c in visibleConstituents" class="constituent">
+                <h3>{{ c.NAME }}</h3>
+                <a href="" ng-click="gotoConstituentPage(c.CONSTITUENTID)">Goto record</a>
+                <br />
+                <img ng-src="data:image/png;base64,{{ c.PICTURE }}" height="100" width="100"/>
+            </li>
+        </ul>
+    </div>
+</div>

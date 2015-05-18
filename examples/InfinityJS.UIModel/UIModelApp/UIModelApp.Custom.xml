@@ -1,0 +1,27 @@
+<CustomUIModelMetadata
+  xmlns="bb_appfx_customuimodelmetadata"
+  xmlns:common="bb_appfx_commontypes"
+  ID="a76f63b6-7bfb-4e6a-ac2b-7579e3786187"
+  Name="UI Model App"
+  Description="A way to inject arbitrary HTML, CSS, and JS without a new UIModel every time."
+  Author="IUF Development"
+  FormHeader="UI Model App">
+
+  <FormMetaData xmlns="bb_appfx_commontypes">
+    <FormFields>
+      <FormField FieldID="HTML" Caption="HTML" DataType="XML" />
+      <FormField FieldID="CSS" Caption="CSS" DataType="XML" />
+      <FormField FieldID="JS" Caption="JS" DataType="XML" />
+    </FormFields>
+
+    <WebUIComponent>
+      <UIModel AssemblyName="InfinityJS.UIModel.dll" ClassName="InfinityJS.UIModel.UIModelApp" />
+      <WebUI>
+        <ExternalResource Url="browser/htmlforms/custom/infinityjs/uimodelapp/UIModelApp.html" />
+      </WebUI>
+    </WebUIComponent>
+
+
+  </FormMetaData>
+
+</CustomUIModelMetadata>

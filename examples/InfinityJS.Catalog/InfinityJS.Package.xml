@@ -1,0 +1,18 @@
+<PackageSpec
+  xmlns="bb_appfx_package"
+  xmlns:common="bb_appfx_commontypes"
+  ID="d6ed99e2-9552-46e9-8317-05d2c006e96c"
+  Name="Infinity JS Package"
+  Description="A package defining specs related to infinity js records"
+  Author="IUF Development">
+
+
+  <common:DependencyList>
+    <common:Dependency CatalogAssembly="InfinityJS.Catalog.dll" CatalogItem="InfinityJS.Catalog.ConstituentCountByCounty.DataList.xml" />
+    <common:Dependency CatalogAssembly="InfinityJS.Catalog.dll" CatalogItem="InfinityJS.Catalog.ConstituentPictures.DataList.xml" />
+    <common:Dependency CatalogAssembly="InfinityJS.Catalog.dll" CatalogItem="InfinityJS.Catalog.InfinityJS.Page.xml" />
+    <common:Dependency CatalogAssembly="InfinityJS.Catalog.dll" CatalogItem="InfinityJS.Catalog.InfinityJS.FunctionalArea.xml" />
+    <common:Dependency CatalogAssembly="InfinityJS.Catalog.dll" CatalogItem="InfinityJS.Catalog.InfinityJSPage.Task.xml" />
+  </common:DependencyList>
+
+</PackageSpec>

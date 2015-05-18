@@ -1,0 +1,8 @@
+﻿<FunctionalAreaSpec
+	xmlns="bb_appfx_functionalarea"
+	xmlns:common="bb_appfx_commontypes" 
+	ID="492da429-dd9b-4c78-a81c-8c71d14f08cc"
+	Name="Infinity JS"
+	Description="Demonstrates InfinityJS features"
+	Author="IUF Development"
+	Sequence="0" />
