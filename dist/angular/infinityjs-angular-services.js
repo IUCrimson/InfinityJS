@@ -203,21 +203,15 @@
      *   parameters : An array of objects containing name and value parameters to pass to the page.
      *   parameterTargetSectionId : The ID of the section to wich to apply the parameters.
      */
-    self.goToPage = function(pageId, tabId, recordId, options) {
-      container.invokePageNavigation({
-        mode: 3,
-        destinationId: pageId,
-        tabId: tabId,
-        contextId: recordId,
-        options: options
-      });
+    self.goToPage = function (pageId, tabId, recordId, options) {
+        InfinityJS.UI.goToPage(pageId, tabId, recordId, options);
     };
 
     /**
      * Refreshes the current page.
      */
     self.refreshPage = function() {
-      container.invokePageRefresh();
+        InfinityJS.UI.refreshPage();
     };
 
     return self;
