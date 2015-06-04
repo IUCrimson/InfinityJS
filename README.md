@@ -114,8 +114,37 @@ collection of objects.
 
 __Example__
 
+No context or parameters
 ```js
 datalist.loadAsObjects('D38B7630-A6F8-4F87-82C1-CAA49AFC04F5').then(function(result) {
+  // result is
+  // [
+  //  { ID: "3506b24f-ff4e-42a1-9e89-73586f6cb2c2", Name: "A Site", Description: "The best site" },
+  //  ...
+  // ]  
+});
+```
+
+With context
+```js
+var contextId = '00000000-0000-0000-0000-000000000000';
+datalist.loadAsObjects('D38B7630-A6F8-4F87-82C1-CAA49AFC04F5', contextId).then(function(result) {
+  // result is
+  // [
+  //  { ID: "3506b24f-ff4e-42a1-9e89-73586f6cb2c2", Name: "A Site", Description: "The best site" },
+  //  ...
+  // ]  
+});
+```
+
+With parameters and no context
+```js
+var listParameters = [
+    { name: 'LASTNAME', value: 'Jones' },
+    { name: 'AGE', value: '42' }
+];
+
+datalist.loadAsObjects('D38B7630-A6F8-4F87-82C1-CAA49AFC04F5', null, {parameters: listParameters}).then(function(result) {
   // result is
   // [
   //  { ID: "3506b24f-ff4e-42a1-9e89-73586f6cb2c2", Name: "A Site", Description: "The best site" },
